@@ -1,0 +1,91 @@
+.form {
+    width: 100%;
+    box-sizing: border-box;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__input {
+        padding: 1rem;
+        margin: .5rem;
+        flex: 1;
+        background-color: transparent;
+        border: 1px solid $text;
+        color: $text;
+        outline: none;
+    }
+
+    &__message {
+        flex: 1;
+        padding: 1rem;
+        margin: .5rem;
+        height: 12rem;
+        background-color: transparent;
+        border: 1px solid $text;
+        outline: none;
+    }
+
+    &__button {
+        float: right;
+        height: 4rem;
+        margin-right: 1rem;
+        color: black;
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid $text;
+        color: $text;
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        outline: none;
+    }
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 60%;
+        float: right;  
+        &__row {
+            flex-direction: row;
+        }       
+        &__input {
+            margin: 1rem;
+        }
+        &__message {
+            margin: 1rem;
+        }
+    }
+}
+
+::placeholder {
+    text-transform: uppercase;
+    color: $text;
+    font-size: 1.2rem;
+}
+
+.form__text {
+    text-align: center;
+    &--top {
+        display: block;
+    }
+    &--bottom {
+        display: block;
+    }
+}
+
+.contact {
+    text-align: center;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .contact {
+       text-align: left;
+    }
+}

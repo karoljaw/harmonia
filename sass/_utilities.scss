@@ -1,0 +1,35 @@
+.padding {
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .padding {
+        padding: 10rem 0;           
+    }
+}
+
+.padding-small {
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .padding-small {
+        padding: 5rem 0;           
+    }
+}
+
+.padding-bottom {
+    padding-bottom: 3rem;
+}
+
+.padding-bottom-small {
+    padding-bottom: 1.5rem;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $text;
+}

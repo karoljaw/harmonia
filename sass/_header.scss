@@ -1,0 +1,118 @@
+                        .header {
+                            background: url('img/bg-banner.jpg') center;
+                            background-size: cover;
+                            position: relative;
+                            height: 60rem;
+                            &__image {
+                                position: absolute;
+                                top: 2rem;
+                            }
+                            &__burger {
+                                position: absolute;
+                                top: 2rem;
+                                right: 2rem;
+                                width: 2rem;
+                                height: 2rem;
+                                cursor: pointer;
+                                z-index: 6;
+                            }
+                            &__nav {
+                                display: none;
+                                position: absolute;
+                                top: 5rem;
+                                font-size: 1.6rem;
+                                font-weight: 100;
+                                font-style: italic;
+                                margin-left: 25rem;
+                            }
+                            &__container {
+                                position: absolute;
+                                top: 15vh;
+                            }
+                        }
+
+                        @media (min-width: 900px) {
+                            .header {
+                                &__burger {
+                                    display: none;
+                                }
+                                &__nav {
+                                    display: block;
+                                }
+                                &__burger {
+                                    top: 4rem;
+                                    right: 4rem;
+                                    width: 4rem;
+                                    height: 4rem;
+                                }
+                            }
+                        }
+
+                        .nav-opened {
+                            display: block;
+                            position: fixed;
+                            height: 100vh;
+                            width:100%;
+                            margin-left: 0;
+                            background-color: rgba(0, 0, 0, 0.8);
+                            top: 0;
+                            left: 0;
+                            z-index: 5;
+                            .list {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin-top: 5rem;
+                                li {
+                                    padding-top: 2rem;
+                                    font-size: 2.5rem;
+                                }
+                            }
+                        }
+
+                        @media (min-width: 400px) {
+                            .header {
+                                &__burger {
+                                    top: 4rem;
+                                    right: 4rem;
+                                    width: 4rem;
+                                    height: 4rem;
+                                }
+                            }
+                        }
+
+                        .list {
+                            &__item {
+                                display: inline;
+                                margin-right: 10px;
+                                transition: .3s;
+                                &:hover {
+                                    transform: scale(1.2);
+                                }
+                            }
+                            &__link {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                        }
+
+                        .heading-primary {
+                            color: #fff;
+                            font-size: 1rem;
+                            font-size: 4rem;
+                            padding-right: 2rem;
+                        }
+
+                        .heading-primary--main {
+                            display: block;
+                            font-weight: 600;
+                            font-style: italic;
+                            font-size: 4.4rem;
+                        }
+
+                        .heading-primary--sub {
+                            display: block;
+                            font-weight: 100;
+                            text-transform: uppercase;
+                            max-width: 56rem;
+                        }

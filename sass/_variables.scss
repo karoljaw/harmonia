@@ -1,0 +1,17 @@
+$text: #fffaf0;
+$footer:#383838;
+$section-light-grey: #f2f1ef;
+$section-middle-grey: #d3d3d3;
+$section-grey: #a09f9f;
+
+.bg-light-grey {
+    background-color: $section-light-grey;
+}
+
+.bg-middle-grey {
+    background-color: $section-middle-grey;
+}
+
+.bg-grey {
+    background-color: $section-grey;
+}

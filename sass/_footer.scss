@@ -1,0 +1,14 @@
+.footer {
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    color: $text;
+    &__text {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    &__img {
+        padding-top: 1rem;
+    }
+}

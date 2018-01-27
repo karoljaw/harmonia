@@ -1,0 +1,55 @@
+@import "variables";
+@import "global";
+@import "nav";
+@import "header";
+@import "utilities";
+@import "section";
+@import "table";
+@import "form";
+@import "footer";
+
+
+.feature__row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .feature__row {
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+
+.feature-8 {
+    max-width: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .feature-8 {
+        max-width: 60%;  
+        text-align: left;           
+    }
+}
+
+.feature-4 {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .feature-4 {
+        max-width: 60%;             
+    }
+}
+
+.feature-4 img {
+    border-radius: 50%;
+    border: 20px solid #ccc;
+}
+
